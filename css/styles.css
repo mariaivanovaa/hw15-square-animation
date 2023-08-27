@@ -1,0 +1,48 @@
+.container {
+    width: 300px;
+    height: 300px;
+    outline: 2px solid black;
+    position: relative;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    animation: square 3s infinite ease normal;
+}
+
+@keyframes square {
+
+0% {
+    top: 0;
+    left: 0;
+}
+
+25%{
+    top: 200px;
+    left: 0;
+    background-color: blue;
+}
+
+50% {
+    left: 200px;
+    top: 200px;
+    background-color: green;
+}
+75% {
+    top: 0;
+    left: 200px;
+    background-color: yellow;
+}
+
+100% {
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+}
+
